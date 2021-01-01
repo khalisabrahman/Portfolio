@@ -29,18 +29,18 @@
 
     <div class="hero">
         <div class="content">
-            <h1>Beautifully Crafted Web Experiences</h1>
-            <div class="meet">
+            <h1 class="stagger1">Beautifully Crafted Web Experiences</h1>
+            <div class="meet stagger1">
                 <span><i class="fas fa-hand-point-down"></i></span>
                 <p>Meet Khalis Rahman</p>
             </div>
-            <svg class="scroll" width="45" height="87" viewBox="0 0 45 87">
+            <svg class="scroll stagger1" width="45" height="87" viewBox="0 0 45 87">
                 <g id="Scroll" transform="translate(-169 -650)">
                   <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(169 650)" fill="none" stroke="#fff" stroke-width="6">
                     <rect width="45" height="87" rx="22.5" stroke="none"/>
                     <rect x="3" y="3" width="39" height="81" rx="19.5" fill="none"/>
                   </g>
-                  <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="13.5" cy="14" rx="13.5" ry="14" transform="translate(178 662)" fill="#fff"/>
+                  <ellipse class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="13.5" cy="14" rx="13.5" ry="14" transform="translate(178 662)" fill="#fff"/>
                 </g>
               </svg>
               
@@ -137,5 +137,88 @@
             </a>
         </div>
     </section>
+
+    <section>
+        <p class="contact-me">Like what you see? <span><a href="#">
+            Hire me
+        </a></span></p>
+        <svg class="footer" width="1525" height="560" viewBox="0 0 1525 560">
+            <g id="Group_7" data-name="Group 7" transform="translate(0 -4417)">
+              <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(0 4417)" fill="#6e08f4" stroke="#707070" stroke-width="1">
+                <rect width="1245" height="419" stroke="none"/>
+                <rect x="0.5" y="0.5" width="1244" height="418" fill="none"/>
+              </g>
+              <g id="Group_6" data-name="Group 6" transform="translate(-6 4221)">
+                <rect id="Rectangle_6" data-name="Rectangle 6" width="140" height="140" rx="28" transform="translate(1251 196)" fill="#6700ee"/>
+                <rect id="Rectangle_10" data-name="Rectangle 10" width="140" height="140" rx="28" transform="translate(1251 476)" fill="#6700ee"/>
+                <rect id="Rectangle_8" data-name="Rectangle 8" width="140" height="140" rx="28" transform="translate(1391 336)" fill="#6700ee" opacity="0.287"/>
+                <rect id="Rectangle_7" data-name="Rectangle 7" width="140" height="140" rx="28" transform="translate(1111 336)" fill="#fff"/>
+                <rect id="Rectangle_11" data-name="Rectangle 11" width="140" height="140" rx="28" transform="translate(1105 616)" fill="#fff"/>
+                <rect id="Rectangle_9" data-name="Rectangle 9" width="140" height="140" rx="28" transform="translate(971 476)" fill="#fff" opacity="0.241"/>
+                <circle id="Ellipse_3" data-name="Ellipse 3" cx="70" cy="70" r="70" transform="translate(1111 476)" fill="#00f7c7"/>
+                <circle id="Ellipse_5" data-name="Ellipse 5" cx="70" cy="70" r="70" transform="translate(1251 336)" fill="#f85fcd"/>
+              </g>
+            </g>
+          </svg>
+          
+          
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var t1 = gsap.timeline();
+
+        t1.from('.content', {
+            opacity: 0,
+            y: '-30%',
+            duration: 2,
+            ease: Power4.easeOut
+        })
+
+        t1.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.5")
+
+        t1.from('.hero-design', {
+            opacity: 0, 
+            y:50,
+            ease: Power4.easeOut, 
+            duration: 1
+        }, "-=2")
+
+        gsap.from(".square-anim", {
+            stagger: .3,
+            scale: 0.1,
+            duration: 1,
+            ease:Back.easeOut.config(1.7)
+        })
+
+        gsap.from(".transition2", {
+            scrollTrigger: {
+                trigger: '.transition2',
+                start: 'top bottom'
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .3
+        })
+
+        gsap.from(".transition3", {
+            scrollTrigger: {
+                trigger: '.transition3',
+                start: 'top center'
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        })
+    </script>
 </body>
 </html>

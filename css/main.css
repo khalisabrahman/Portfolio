@@ -158,13 +158,28 @@ section {
   margin-bottom: 2em;
 }
 
-.portolio {
+.portfolio {
   background: #F7F7F7;
 }
 
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
+}
+
+.contact-me {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 5em;
+}
+
+span a {
+  color: #FF64CB;
+}
+
+.footer {
+  margin-left: -90%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -185,6 +200,7 @@ section {
   .right {
     margin-left: 2em;
     margin-top: 1em;
+    border-radius: 1em;
   }
   .skills {
     margin-top: -5em;
@@ -272,6 +288,7 @@ section {
   .portfolio img {
     float: right;
     max-width: 500px;
+    border: 1px solid black;
   }
 }
 
@@ -287,6 +304,39 @@ section {
   }
   .hero .content {
     padding: 6em 8em 6em 20em;
+  }
+  .footer {
+    margin-left: -50%;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(178px, 662px);
+            transform: translate(178px, 662px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(178px, 694px);
+            transform: translate(178px, 694px);
+    z-index: 5;
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(178px, 662px);
+            transform: translate(178px, 662px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(178px, 694px);
+            transform: translate(178px, 694px);
+    z-index: 5;
   }
 }
 /*# sourceMappingURL=main.css.map */
