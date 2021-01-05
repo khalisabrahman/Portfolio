@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b45a544bb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="css/main.css">
+    
     <title>Document</title>
     
 </head>
@@ -71,30 +73,37 @@
         <img class="right transition2" src="images/project-1.png" alt="Featured Project">
     </section>
 
-    <section id="skills"class="skills">
-        <div class="skills-container">
-            <ul>
-                <li class="transition2">
+    <section id="skills" class="skills glide">
+        <div class="skills-container glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <div data-glide-el="controls">
+                    <button data-glide-dir="<<">Start</button>
+                    
+                  </div>
+                <li class="transition2 glide__slide">
                     <div class="icon-container one">
                         <i class="fab fa-js-square fa-7x"></i>
                     </div>
                     <p class="skill-title">Javascript</p>
                     <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </li>
-                <li class="transition2">
+                <li class="transition2 glide__slide">
                     <div class="icon-container two">
                         <i class="fab fa-react fa-7x"></i>
                     </div>
                     <p class="skill-title">React</p>
                     <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </li>
-                <li class="transition2">
+                <li class="transition2 glide__slide">
                     <div class="icon-container three">
                         <i class="fab fa-html5 fa-7x"></i>
                     </div>
                     <p class="skill-title">HTML5</p>
                     <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </li>
+                <div data-glide-el="controls">
+                    <button data-glide-dir=">>">End</button>
+                  </div>
             </ul>
         </div>
     </section>
@@ -219,6 +228,9 @@
             duration: 1.2,
             stagger: .6
         })
+
+        
+        new Glide('.glide').mount()
     </script>
 </body>
 </html>
