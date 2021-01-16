@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 
+
 body {
     height: 100vh;
     margin: 0;
@@ -204,11 +205,11 @@ span a{
         padding-top: 7em;
     }
 
-    .skills-container ul{
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-gap: 1em;
-    }
+    // .skills-container ul{
+    //     display: grid;
+    //     grid-template-columns: repeat(3, auto);
+    //     grid-gap: 1em;
+    // }
 
     .portfolio {
         padding-top: 7em;

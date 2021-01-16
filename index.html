@@ -7,12 +7,12 @@
 			src="https://kit.fontawesome.com/b45a544bb7.js"
 			crossorigin="anonymous"
 		></script>
-
-		<link rel="stylesheet" href="./css/main.css" />
 		<link
 			rel="stylesheet"
 			href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"
 		/>
+		<link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+		<link rel="stylesheet" href="./css/main.css" />
 
 		<title>Document</title>
 	</head>
@@ -208,13 +208,31 @@
 						<p class="featured-desc skill-desc">
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 						</p>
+                    </li>
+                    <li class="transition2 glide__slide">
+						<div class="icon-container one">
+							<i class="fab fa-css3-alt fa-7x"></i>
+						</div>
+						<p class="skill-title">CSS</p>
+						<p class="featured-desc skill-desc">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						</p>
+                    </li>
+                    <li class="transition2 glide__slide">
+						<div class="icon-container one">
+							<i class="fab fa-js-square fa-7x"></i>
+						</div>
+						<p class="skill-title">Material UI</p>
+						<p class="featured-desc skill-desc">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						</p>
 					</li>
 				</ul>
-            </div>
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-              </div>
+			</div>
+			<div class="glide__arrows" data-glide-el="controls">
+				<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+				<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+			</div>
 		</section>
 
 		<section id="portfolio" class="portfolio">
@@ -357,81 +375,98 @@
 					</g>
 				</g>
 			</svg>
-			
-        </section>
-        
-    
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
-        integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
-        crossorigin="anonymous"></script>
+		</section>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+			integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
+			crossorigin="anonymous"
+		></script>
 		<script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
 		<script>
-        gsap.registerPlugin(ScrollTrigger);
-        var t1 = gsap.timeline();
+			gsap.registerPlugin(ScrollTrigger);
+			var t1 = gsap.timeline();
 
-        t1.from('.content', {
-            opacity: 0,
-            y: '-30%',
-            duration: 2,
-            ease: Power4.easeOut,
-        });
+			t1.from('.content', {
+				opacity: 0,
+				y: '-30%',
+				duration: 2,
+				ease: Power4.easeOut,
+			});
 
-        t1.from(
-            '.stagger1', {
-                opacity: 0,
-                y: -50,
-                stagger: 0.3,
-                ease: Power4.easeOut,
-                duration: 2,
-            },
-            '-=1.5'
-        );
+			t1.from(
+				'.stagger1',
+				{
+					opacity: 0,
+					y: -50,
+					stagger: 0.3,
+					ease: Power4.easeOut,
+					duration: 2,
+				},
+				'-=1.5'
+			);
 
-        t1.from(
-            '.hero-design', {
-                opacity: 0,
-                y: 50,
-                ease: Power4.easeOut,
-                duration: 1,
-            },
-            '-=2'
-        );
+			t1.from(
+				'.hero-design',
+				{
+					opacity: 0,
+					y: 50,
+					ease: Power4.easeOut,
+					duration: 1,
+				},
+				'-=2'
+			);
 
-        gsap.from('.square-anim', {
-            stagger: 0.3,
-            scale: 0.1,
-            duration: 1,
-            ease: Back.easeOut.config(1.7),
-        });
+			gsap.from('.square-anim', {
+				stagger: 0.3,
+				scale: 0.1,
+				duration: 1,
+				ease: Back.easeOut.config(1.7),
+			});
 
-        gsap.from('.transition2', {
-            scrollTrigger: {
-                trigger: '.transition2',
-                start: 'top bottom',
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1.2,
-            stagger: 0.3,
-        });
+			gsap.from('.transition2', {
+				scrollTrigger: {
+					trigger: '.transition2',
+					start: 'top bottom',
+				},
+				y: 50,
+				opacity: 0,
+				duration: 1.2,
+				stagger: 0.3,
+			});
 
-        gsap.from('.transition3', {
-            scrollTrigger: {
-                trigger: '.transition3',
-                start: 'top center',
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1.2,
-            stagger: 0.6,
-        });
-    </script>
+			gsap.from('.transition3', {
+				scrollTrigger: {
+					trigger: '.transition3',
+					start: 'top center',
+				},
+				y: 50,
+				opacity: 0,
+				duration: 1.2,
+				stagger: 0.6,
+			});
+		</script>
 
 		<script>
-			new Glide('.glide').mount();
+            const config = {
+                type: "carousel",
+                perView: 4,
+                breakpoints: {
+                    1024: {
+                        perView: 3
+                    },
+                    600: {
+                        perView: 1
+                    }
+                }
+            }
+			new Glide('.glide', config
+  ).mount();
 		</script>
 	</body>
 </html>
