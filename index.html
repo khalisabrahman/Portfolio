@@ -179,12 +179,12 @@
 			/>
 		</section>
 
-		<section id="skills" class="skills glide">
+		<div id="skills" class="skills glide">
 			<div class="skills-container glide__track" data-glide-el="track">
 				<ul class="glide__slides">
 					<li class="transition2 glide__slide">
 						<div class="icon-container one">
-							<i class="fab fa-js-square fa-7x"></i>
+							<i class="fab fa-js-square fa-5x"></i>
 						</div>
 						<p class="skill-title">Javascript</p>
 						<p class="featured-desc skill-desc">
@@ -193,7 +193,7 @@
 					</li>
 					<li class="transition2 glide__slide">
 						<div class="icon-container two">
-							<i class="fab fa-react fa-7x"></i>
+							<i class="fab fa-react fa-5x"></i>
 						</div>
 						<p class="skill-title">React</p>
 						<p class="featured-desc skill-desc">
@@ -202,7 +202,7 @@
 					</li>
 					<li class="transition2 glide__slide">
 						<div class="icon-container three">
-							<i class="fab fa-html5 fa-7x"></i>
+							<i class="fab fa-html5 fa-5x"></i>
 						</div>
 						<p class="skill-title">HTML5</p>
 						<p class="featured-desc skill-desc">
@@ -211,16 +211,34 @@
                     </li>
                     <li class="transition2 glide__slide">
 						<div class="icon-container one">
-							<i class="fab fa-css3-alt fa-7x"></i>
+							<i class="fab fa-css3-alt fa-5x"></i>
 						</div>
 						<p class="skill-title">CSS</p>
+						<p class="featured-desc skill-desc">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						</p>
+					</li>
+					<li class="transition2 glide__slide">
+						<div class="icon-container one">
+							<i class="fab fa-sass fa-5x"></i>
+						</div>
+						<p class="skill-title">SASS</p>
 						<p class="featured-desc skill-desc">
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 						</p>
                     </li>
                     <li class="transition2 glide__slide">
 						<div class="icon-container one">
-							<i class="fab fa-js-square fa-7x"></i>
+							<i class="fab fa-git-alt fa-5x"></i>
+						</div>
+						<p class="skill-title">GIT</p>
+						<p class="featured-desc skill-desc">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						</p>
+					</li>
+					<li class="transition2 glide__slide">
+						<div class="icon-container one">
+							<i class="fab fa-git-alt fa-5x"></i>
 						</div>
 						<p class="skill-title">Material UI</p>
 						<p class="featured-desc skill-desc">
@@ -230,10 +248,10 @@
 				</ul>
 			</div>
 			<div class="glide__arrows" data-glide-el="controls">
-				<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-				<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+				<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+				<button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
 			</div>
-		</section>
+		</div>
 
 		<section id="portfolio" class="portfolio">
 			<div class="portfolio-container transition3">
@@ -454,11 +472,15 @@
 
 		<script>
             const config = {
-                type: "carousel",
-                perView: 4,
+                type: "slider",
+				perView: 4,
+				gap: 20,
+				bound: true,
+				rewind: true,
+				autoplay: 3000,
                 breakpoints: {
                     1024: {
-                        perView: 3
+                        perView: 4
                     },
                     600: {
                         perView: 1

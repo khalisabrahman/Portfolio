@@ -220,6 +220,13 @@ section {
 
 .skills {
   background: #FF64CB;
+  padding: 4em 0em;
+  text-align: center;
+}
+
+.glide__arrow--left, .glide__arrow--right {
+  color: black;
+  font-weight: bold;
 }
 
 .skills-container ul li {
@@ -287,6 +294,7 @@ span a {
     margin-left: 2em;
     margin-top: 1em;
     border-radius: 1em;
+    z-index: 300;
   }
   .skills {
     margin-top: -5em;
@@ -294,7 +302,7 @@ span a {
     padding-top: 7em;
   }
   .portfolio {
-    padding-top: 7em;
+    padding-top: 8em;
   }
   .portfolio-container img {
     margin-left: 2rem;
@@ -386,6 +394,7 @@ span a {
   }
   .footer {
     margin-left: -50%;
+    width: 100%;
   }
 }
 

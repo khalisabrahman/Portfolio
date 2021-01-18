@@ -133,6 +133,12 @@ section {
     background: #FF64CB;
 }
 
+.glide__arrow--left, .glide__arrow--right {
+    color: black;
+    font-weight: bold;
+}
+
+
 .skills-container ul li{
     background: white;
     padding: 2em;
@@ -197,6 +203,7 @@ span a{
         margin-left: 2em;
         margin-top: 1em;
         border-radius: 1em;
+        z-index: 300;
     }
 
     .skills {
@@ -206,9 +213,9 @@ span a{
     }
 
     // .skills-container ul{
-    //     display: grid;
-    //     grid-template-columns: repeat(3, auto);
-    //     grid-gap: 1em;
+    //     // display: grid;
+    //     // grid-template-columns: repeat(3, auto);
+    //     grid-gap: 2em;
     // }
 
     .portfolio {
@@ -317,7 +324,7 @@ span a{
 
     .footer {
         margin-left: -50%;
-        // width: 100%
+        width: 100%
     }
 
     
