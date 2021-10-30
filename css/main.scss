@@ -26,7 +26,10 @@ img {
     background-color: #6700EE;
     
     a {
-        color: white
+        color: white;
+        &:hover {
+            color: #FFCB05;
+         };
     }
 }
 
@@ -131,6 +134,8 @@ section {
 
 .skills {
     background: #FF64CB;
+    padding: 4em 0em;
+    text-align: center;
 }
 
 .glide__arrow--left, .glide__arrow--right {
@@ -219,7 +224,7 @@ span a{
     // }
 
     .portfolio {
-        padding-top: 7em;
+        padding-top: 8em;
     }
 
     .portfolio-container img {
