@@ -105,6 +105,13 @@ img {
 	width: 100%;
 }
 
+.portfolio-img {
+	max-height: 286px;
+	object-fit: cover;
+	object-position: top;
+	
+}
+
 .nav-container {
 	background-color: #6700ee;
 }
@@ -173,6 +180,11 @@ header a {
 	color: yellow;
 }
 
+.github-logo {
+	display: block;
+	padding-bottom: 2rem;
+}
+
 .scroll {
 	width: 30px;
 	margin-top: 2em;
@@ -217,7 +229,6 @@ section {
 
 .featured-desc {
 	color: #252525;
-	margin-bottom: 3em;
 	font-size: 0.9em;
 	line-height: 1.8em;
 	font-weight: 500;
@@ -301,7 +312,7 @@ span a {
 	.portfolio-left {
 		display: -ms-grid;
 		display: grid;
-		place-content: center;
+		justify-content: flex-start;
 	}
 	.right {
 		margin-left: 2em;
