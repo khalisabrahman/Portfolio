@@ -22,15 +22,28 @@
 
 	<body>
 		<div class="nav-container">
-			<header>
+			<header class="header">
 				<a href="index.html" class="logo">Khalis Rahman</a>
-				<nav>
+				<nav class="hide-for-mobile">
 					<ul>
 						<li><a href="#portfolio">My Work</a></li>
 						<li><a href="#skills">My Skills</a></li>
-						<li><a href="#">Hire Me</a></li>
+						<li><a href="#hire">Hire Me</a></li>
 					</ul>
 				</nav>
+				<!-- TODO -->
+				<a id="btnHamburger" data-popup-trigger="one" href="#" class="toggle hide-for-desktop">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div data-popup-modal="one" class="popup-modal">
+					<a href="#portfolio" class="menuLinks">My Work</a>
+					<a href="#skills"
+					class="menuLinks">My Skills</a>
+					<a href="#hire"
+					class="menuLinks">Hire Me</a>
+				</div>
 			</header>
 			<div class="social-header">
 				<ul>
@@ -213,49 +226,42 @@
 							<i class="fab fa-js-square fa-5x"></i>
 						</div>
 						<p class="skill-title">Javascript</p>
-						
 					</li>
 					<li class="transition2 glide__slide">
 						<div class="icon-container two">
 							<i class="fab fa-react fa-5x"></i>
 						</div>
 						<p class="skill-title">React</p>
-						
 					</li>
 					<li class="transition2 glide__slide">
 						<div class="icon-container three">
 							<i class="fab fa-html5 fa-5x"></i>
 						</div>
 						<p class="skill-title">HTML5</p>
-						
 					</li>
 					<li class="transition2 glide__slide">
 						<div class="icon-container one">
 							<i class="fab fa-css3-alt fa-5x"></i>
 						</div>
 						<p class="skill-title">CSS</p>
-						
 					</li>
 					<li class="transition2 glide__slide">
 						<div class="icon-container one">
 							<i class="fab fa-sass fa-5x"></i>
 						</div>
 						<p class="skill-title">SASS</p>
-						
 					</li>
 					<li class="transition2 glide__slide">
 						<div class="icon-container one">
 							<i class="fab fa-git-alt fa-5x"></i>
 						</div>
 						<p class="skill-title">GIT</p>
-						
 					</li>
 					<li class="transition2 glide__slide">
 						<div class="icon-container one">
 							<i class="fab fa-git-alt fa-5x"></i>
 						</div>
 						<p class="skill-title">Material UI</p>
-						
 					</li>
 				</ul>
 			</div>
@@ -298,7 +304,11 @@
 					target="_blank"
 					rel="noreferrer noopener"
 				>
-					<img src="images/socialMedia.png" alt="social media website" class="portfolio-img"/>
+					<img
+						src="images/socialMedia.png"
+						alt="social media website"
+						class="portfolio-img"
+					/>
 				</a>
 			</div>
 			<div class="portfolio-container transition3">
@@ -327,7 +337,7 @@
 					target="_blank"
 					rel="noreferrer noopener"
 				>
-					<img src="images/Maker.png" alt="maker website" class="portfolio-img"/>
+					<img src="images/Maker.png" alt="maker website" class="portfolio-img" />
 					<!-- TODO-->
 				</a>
 			</div>
@@ -357,7 +367,11 @@
 					target="_blank"
 					rel="noreferrer noopener"
 				>
-					<img src="images/sunnyside.png" alt="sunnyside website" class="portfolio-img"/>
+					<img
+						src="images/sunnyside.png"
+						alt="sunnyside website"
+						class="portfolio-img"
+					/>
 				</a>
 			</div>
 			<div class="portfolio-container transition3">
@@ -381,8 +395,16 @@
 						></a>
 					</div>
 				</div>
-				<a href="#">
-					<img src="images/moviefinder.png" alt="MovieFinder website" class="portfolio-img"/>
+				<a
+					href="https://movie-finder-tan.vercel.app/"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					<img
+						src="images/moviefinder.png"
+						alt="MovieFinder website"
+						class="portfolio-img"
+					/>
 				</a>
 			</div>
 		</section>
@@ -483,7 +505,7 @@
 				</g>
 			</svg>
 		</section> -->
-
+		<script src="./js/script.js"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
 			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
