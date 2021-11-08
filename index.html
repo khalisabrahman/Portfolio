@@ -7,6 +7,16 @@
 			src="https://kit.fontawesome.com/b45a544bb7.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="./js/sendMail.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init('user_pu2gux61Ir2TkWC6Pnnam');
+			})();
+		</script>
 		<link
 			rel="stylesheet"
 			href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"
@@ -32,17 +42,20 @@
 					</ul>
 				</nav>
 				<!-- TODO -->
-				<a id="btnHamburger" data-popup-trigger="one" href="#" class="toggle hide-for-desktop">
+				<a
+					id="btnHamburger"
+					data-popup-trigger="one"
+					href="#"
+					class="toggle hide-for-desktop"
+				>
 					<span></span>
 					<span></span>
 					<span></span>
 				</a>
 				<div data-popup-modal="one" class="popup-modal">
 					<a href="#portfolio" class="menuLinks">My Work</a>
-					<a href="#skills"
-					class="menuLinks">My Skills</a>
-					<a href="#hire"
-					class="menuLinks">Hire Me</a>
+					<a href="#skills" class="menuLinks">My Skills</a>
+					<a href="#hire" class="menuLinks">Hire Me</a>
 				</div>
 			</header>
 			<div class="social-header">
@@ -338,7 +351,6 @@
 					rel="noreferrer noopener"
 				>
 					<img src="images/Maker.png" alt="maker website" class="portfolio-img" />
-					<!-- TODO-->
 				</a>
 			</div>
 			<div class="portfolio-container transition3">
@@ -409,6 +421,9 @@
 			</div>
 		</section>
 
+		<input type="text" id="from_name" placeholder="Enter your email address" />
+		<input type="text" id="message" placeholder="Type your message" />
+		<button onclick="sendMail()">Send</button>
 		<!-- <section>
 			<p class="contact-me">
 				Like what you see? <span><a id="hire" href="#hire"> Hire me </a></span>
