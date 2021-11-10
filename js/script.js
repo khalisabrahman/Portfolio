@@ -1,7 +1,7 @@
-// const body = document.querySelector('body');
+// MENU FOR MOBILE
 const btnHamburger = document.querySelector('#btnHamburger');
 const menuLinks = document.querySelectorAll('.menuLinks');
-const menuTrigger = btnHamburger.dataset;
+// const menuTrigger = btnHamburger.dataset;
 const popupModal = document.querySelector(`[data-popup-modal="one"]`);
 const header = document.querySelector('.header');
 
@@ -24,3 +24,6 @@ menuLinks.forEach(link => {
 		btnHamburger.classList.remove('openMenu');
 	})
 })
+
+
+

@@ -7,7 +7,7 @@
 			src="https://kit.fontawesome.com/b45a544bb7.js"
 			crossorigin="anonymous"
 		></script>
-		<script src="./js/sendMail.js"></script>
+		
 		<script
 			type="text/javascript"
 			src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
@@ -420,14 +420,36 @@
 				</a>
 			</div>
 		</section>
-
-		<input type="text" id="from_name" placeholder="Enter your email address" />
-		<input type="text" id="message" placeholder="Type your message" />
-		<button onclick="sendMail()">Send</button>
+		<p class="contact-me">
+			Like what you see? <span><a id="hire"> Hire me </a></span>
+		</p>
+		<div id="hireModal" data-popup-modal="two" class="hirePopup-modal">
+			<form id='form'class="form">
+				<h2 class="modalTitle">Get In Touch.</h2>
+				<div class="form-control">
+					<input
+					type="email"
+					id="email"
+					placeholder="Enter your email address"
+					required
+					class="emailField"
+				/>
+				<textarea row='5' ype="text" id="message" placeholder="Type your message" class="messageField"></textarea>
+				</div>
+				
+				<button class="sendBtn">Send</button>
+				<i id="modalCloseBtn" class="fas fa-times"></i>
+			</form>
+		</div>
 		<!-- <section>
 			<p class="contact-me">
-				Like what you see? <span><a id="hire" href="#hire"> Hire me </a></span>
+				Like what you see? <span><a id="hire"> Hire me </a></span>
 			</p>
+			<div data-popup-modal="two" class="hirePopup-modal">
+				<input type="text" id="from_name" placeholder="Enter your email address" />
+				<input type="text" id="message" placeholder="Type your message" />
+				<button onclick="sendMail()">Send</button>
+			</div>
 			<svg class="footer" width="1525" height="560" viewBox="0 0 1525 560">
 				<g id="Group_7" data-name="Group 7" transform="translate(0 -4417)">
 					<g
@@ -520,6 +542,7 @@
 				</g>
 			</svg>
 		</section> -->
+		<script src="./js/sendMail.js"></script>
 		<script src="./js/script.js"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
