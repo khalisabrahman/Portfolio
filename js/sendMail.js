@@ -42,15 +42,15 @@ function sendMail() {
 
 
 
-function showError(input, message) {
-	// const formControl = input.parentElement;
-	// formControl.className = 'form-control error';
+// function showError(input, message) {
+// 	// const formControl = input.parentElement;
+// 	// formControl.className = 'form-control error';
 
-	// const small = formControl.querySelector('small');
-	// small.innerText = message;
+// 	// const small = formControl.querySelector('small');
+// 	// small.innerText = message;
 
-	email.classList.add('errorBorder');
-}
+// 	email.classList.add('errorBorder');
+// }
 
 function showSuccess(input) {
 	const formControl = input.parentElement;

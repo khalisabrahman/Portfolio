@@ -54,10 +54,7 @@ img {
 	display: block;
 }
 
-.is--visible {
-	opacity: 1;
-	pointer-events: auto;
-}
+
 
 
 /* ------- 2. Navigation Styling ------- */
@@ -438,6 +435,10 @@ span a {
 	border: 2px solid red;
 }
 
+.is--visible {
+	opacity: 1;
+	pointer-events: auto;
+}
 
 
 /* ------- 8. Footer Section ------ */
