@@ -35,7 +35,7 @@ function sendMail() {
 
     emailjs.send('service_06rbtmo', 'template_58loxda', emailObject).then(function(res) {
         console.log('Message sent', res.status);
-		alert('Email has been sent. Thank you.')
+		alert('Email has been sent. We will get in touch. Thank you.')
     })
 }
 

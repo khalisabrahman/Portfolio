@@ -1,7 +1,6 @@
 // MENU FOR MOBILE
 const btnHamburger = document.querySelector('#btnHamburger');
 const menuLinks = document.querySelectorAll('.menuLinks');
-// const menuTrigger = btnHamburger.dataset;
 const popupModal = document.querySelector(`[data-popup-modal="one"]`);
 const header = document.querySelector('.header');
 

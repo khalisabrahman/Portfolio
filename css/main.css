@@ -1,4 +1,261 @@
+/* ------------------------------------------------
+
+1. Default Styling
+2. Navigation Section
+3. Hero Section
+4. Featured Section
+5. Skills Section
+6. Projects Section
+7. Contact Me Section
+8. Footer Section
+9. Media Queries
+
+---------------------------------------------------*/
+
+
+/* ------- 1. Default Styling -------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+	height: 100vh;
+	margin: 0;
+	font-family: 'Poppins', arial;
+}
+
+section {
+	padding: 4em 2em;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+.github-logo {
+	display: block;
+	padding-bottom: 2rem;
+}
+
+.hide-for-desktop {
+	display: none;
+}
+
+.hide-for-mobile {
+	display: block;
+}
+
+.is--visible {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+/* ------- 2. Navigation Styling ------- */
+
+.nav-container {
+	background-color: #6700ee;
+}
+
+.nav-container a {
+	color: white;
+}
+
+.nav-container a:hover {
+	color: #ffcb05;
+}
+
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 2em;
+}
+
+header .logo {
+	color: #00f7c7;
+	font-weight: bold;
+}
+
+header ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+header a {
+	display: block;
+	padding: 0 1rem;
+}
+
+.social-header,
+.hero-design {
+	display: none;
+}
+
+.toggle > span {
+	display: block;
+	width: 26px;
+	height: 2px;
+	background-color: white;
+	transition: all 300ms ease-in-out;
+	transform-origin: 3px 1px;
+	
+}
+
+.toggle > span:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.openMenu > span:first-child {
+	transform: rotate(45deg);
+}
+
+.openMenu > span:nth-child(2) {
+	opacity: 0;
+}
+
+.openMenu > span:last-child {
+	transform: rotate(-45deg);
+}
+
+.popup-modal {
+	background-color: #6700ee;
+	position: absolute;
+	right: 0;
+	top: 89px;
+	padding: 45px;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 300ms ease-in-out;
+	z-index: 1011;
+}
+
+/* ------- 3. Hero Section ------- */
+
+.hero {
+	background-color: #6e08f4;
+	color: white;
+	display: -ms-grid;
+	display: grid;
+	text-align: center;
+	padding: 4em;
+}
+
+.meet {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 auto;
+	width: 200px;
+	font-weight: bold;
+	color: #ff64cb;
+}
+
+.meet .fa-hand-point-down {
+	margin-top: 1.2em;
+	margin-right: 0.5em;
+	color: yellow;
+}
+
+.scroll {
+	width: 30px;
+	margin-top: 2em;
+}
+
+/* ------- 4. Featured Section ------- */
+
+.featured {
+	position: relative;
+}
+
+.featured::before {
+	content: '';
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: #e5d5fa;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.subtitle {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #6e00ff;
+	letter-spacing: 0.2rem;
+	font-size: 0.85em;
+}
+
+.featured-title {
+	color: black;
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-top: -0.4em;
+	display: block;
+}
+
+.featured-desc {
+	color: #252525;
+	font-size: 0.9em;
+	line-height: 1.8em;
+	font-weight: 500;
+}
+
+.box {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* ------- 5. Skills Section ------- */
+
+.skills {
+	background: #ff64cb;
+	padding: 4em 0em;
+	text-align: center;
+}
+
+.glide__arrow--left,
+.glide__arrow--right {
+	color: black;
+	font-weight: bold;
+}
+
+.skills-container ul li {
+	background: white;
+	padding: 2em;
+	border-radius: 1em;
+	margin-bottom: 1em;
+}
+
+.skills-container ul li .icon-container {
+	height: 100px;
+	display: -ms-grid;
+	display: grid;
+	place-content: center;
+}
+
+.skills-container ul li .skill-title {
+	font-weight: bold;
+}
+
+.skills-container ul li .featured-desc {
+	margin-bottom: 2em;
+}
+
 .glide {
 	position: relative;
 	width: 100%;
@@ -85,24 +342,11 @@
 	direction: rtl;
 }
 
-body {
-	height: 100vh;
-	margin: 0;
-	font-family: 'Poppins', arial;
-}
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
+/* ------ 6. Projects Section ------ */
 
-a {
-	text-decoration: none;
-}
-
-img {
-	width: 100%;
+.portfolio {
+	background: #f7f7f7;
 }
 
 .portfolio-img {
@@ -111,236 +355,13 @@ img {
 	object-position: top;
 }
 
-.nav-container {
-	background-color: #6700ee;
-}
-
-.nav-container a {
-	color: white;
-}
-
-.nav-container a:hover {
-	color: #ffcb05;
-}
-
-header {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	padding: 2em;
-}
-
-header .logo {
-	color: #00f7c7;
-	font-weight: bold;
-}
-
-header ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
-
-header a {
-	display: block;
-	padding: 0 1rem;
-}
-
-.social-header,
-.hero-design {
-	display: none;
-}
-
-.hero {
-	background-color: #6e08f4;
-	color: white;
-	display: -ms-grid;
-	display: grid;
-	text-align: center;
-	padding: 4em;
-}
-
-.meet {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin: 0 auto;
-	width: 200px;
-	font-weight: bold;
-	color: #ff64cb;
-}
-
-.meet .fa-hand-point-down {
-	margin-top: 1.2em;
-	margin-right: 0.5em;
-	color: yellow;
-}
-
-.github-logo {
-	display: block;
-	padding-bottom: 2rem;
-}
-
-.scroll {
-	width: 30px;
-	margin-top: 2em;
-}
-
-section {
-	padding: 4em 2em;
-	text-align: center;
-}
-
-.featured {
-	position: relative;
-}
-
-.featured::before {
-	content: '';
-	position: absolute;
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	background: #e5d5fa;
-	top: 0;
-	left: 0;
-	z-index: -1;
-}
-
-.subtitle {
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #6e00ff;
-	letter-spacing: 0.2rem;
-	font-size: 0.85em;
-}
-
-.featured-title {
-	color: black;
-	font-weight: bold;
-	font-size: 1.3em;
-	margin-top: -0.4em;
-	display: block;
-}
-
-.featured-desc {
-	color: #252525;
-	font-size: 0.9em;
-	line-height: 1.8em;
-	font-weight: 500;
-}
-
-.box {
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.skills {
-	background: #ff64cb;
-	padding: 4em 0em;
-	text-align: center;
-}
-
-.glide__arrow--left,
-.glide__arrow--right {
-	color: black;
-	font-weight: bold;
-}
-
-.skills-container ul li {
-	background: white;
-	padding: 2em;
-	border-radius: 1em;
-	margin-bottom: 1em;
-}
-
-.skills-container ul li .icon-container {
-	height: 100px;
-	display: -ms-grid;
-	display: grid;
-	place-content: center;
-}
-
-.skills-container ul li .skill-title {
-	font-weight: bold;
-}
-
-.skills-container ul li .featured-desc {
-	margin-bottom: 2em;
-}
-
-.portfolio {
-	background: #f7f7f7;
-}
-
 .portfolio-container a img {
 	border-radius: 1em;
 	margin-bottom: 2em;
 }
 
-.contact-me {
-	color: black;
-	font-weight: bold;
-	font-size: 1.3em;
-	margin-bottom: 5em;
-}
 
-span a {
-	color: #ff64cb;
-	cursor: pointer;
-}
-
-.footer {
-	margin-left: -90%;
-}
-
-.hide-for-desktop {
-	display: none;
-}
-
-.hide-for-mobile {
-	display: block;
-}
-
-.toggle > span {
-	display: block;
-	width: 26px;
-	height: 2px;
-	background-color: white;
-	transition: all 300ms ease-in-out;
-	transform-origin: 3px 1px;
-	/* margin-bottom: 5px */
-}
-
-.toggle > span:not(:last-child) {
-	margin-bottom: 5px;
-}
-
-.openMenu > span:first-child {
-	transform: rotate(45deg);
-}
-
-.openMenu > span:nth-child(2) {
-	opacity: 0;
-}
-
-.openMenu > span:last-child {
-	transform: rotate(-45deg);
-}
-
-.popup-modal {
-	background-color: #6700ee;
-	position: absolute;
-	right: 0;
-	top: 89px;
-	padding: 45px;
-	opacity: 0;
-	pointer-events: none;
-	transition: all 300ms ease-in-out;
-	z-index: 1011;
-}
+/* ------ 7. Contact Me Section ------ */
 
 .hirePopup-modal {
 	position: relative;
@@ -358,9 +379,11 @@ span a {
 }
 
 .modalTitle {
-	padding-top: 35px;
+	padding-top: 20px;
 	text-align: center;
 }
+
+
 .emailField {
 	display: block;
 	border-radius: 4px;
@@ -373,13 +396,30 @@ span a {
 	display: block;
 	border-radius: 4px;
 	padding: 7px;
-	margin: 5px auto;
+	margin: 10px auto;
 	width: 280px;
+	height: 50px;
 }
 
-.is--visible {
-	opacity: 1;
-	pointer-events: auto;
+.sendBtn {
+	display: block;
+	margin: 0 auto;
+	padding: 5px 10px;
+	cursor: pointer;
+	background-color: #f7f7f7;
+}
+
+
+.contact-me {
+	color: black;
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-bottom: 5em;
+}
+
+span a {
+	color: #ff64cb;
+	cursor: pointer;
 }
 
 .popup-modal a {
@@ -391,16 +431,24 @@ span a {
 	position: absolute;
 	top: 5px;
 	right: 10px;
-}
-
-.sendBtn {
-	display: block;
-	margin: 0 auto;
+	cursor: pointer;
 }
 
 .errorBorder {
 	border: 2px solid red;
 }
+
+
+
+/* ------- 8. Footer Section ------ */
+
+.footer {
+	margin-left: -90%;
+	display: none;
+}
+
+
+/* ------- 9. Media Queries -------- */
 
 @media only screen and (max-width: 500px) {
 	.hide-for-desktop {
@@ -415,7 +463,7 @@ span a {
 		right: 0;
 		top: 30%;
 		left: 0%;
-		bottom: 30%;
+		bottom: 26%;
 	}
 }
 
@@ -524,6 +572,11 @@ span a {
 		max-width: 500px;
 		border: 1px solid black;
 	}
+
+	.footer {
+		display: block;
+	}
+	
 }
 
 @media only screen and (min-width: 1250px) {
