@@ -246,7 +246,7 @@
             </div>
             <p class="skill-title">ReactJS</p>
           </li>
-		  <li class="transition2 glide__slide">
+          <li class="transition2 glide__slide">
             <div class="icon-container two">
               <i class="fab fa-angular fa-5x"></i>
             </div>
@@ -367,7 +367,7 @@
         </a>
       </div>
 
-	  <div class="portfolio-container transition3">
+      <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
             <p class="subtitle">Project 3</p>
@@ -472,7 +472,7 @@
         </a>
       </div>
 
-	  <!-- <div class="portfolio-container transition3">
+      <!-- <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
             <p class="subtitle">Project 5</p>
@@ -722,7 +722,12 @@
           },
         },
       };
-      new Glide(".glide", config).mount();
+
+      if (document.querySelector(".glide") !== null) {
+        new Glide(".glide", config).mount();
+      }
+
+      //   new Glide(".glide", config).mount();
     </script>
   </body>
 </html>
