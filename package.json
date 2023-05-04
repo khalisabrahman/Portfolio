@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "My Portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khalisabrahman/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khalisabrahman/Portfolio/issues"
+  },
+  "homepage": "https://github.com/khalisabrahman/Portfolio#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0"
+  }
+}
