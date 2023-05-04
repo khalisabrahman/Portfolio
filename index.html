@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/b45a544bb7.js"
+			crossorigin="anonymous"
+		></script>
+		
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init('user_pu2gux61Ir2TkWC6Pnnam');
+			})();
+		</script>
+		<link
+			rel="stylesheet"
+			href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<title>Khalis Portfolio</title>
+	</head>
+
+	<body>
+		<div class="nav-container">
+			<header class="header">
+				<a href="index.html" class="logo">Khalis Rahman</a>
+				<nav class="hide-for-mobile">
+					<ul>
+						<li><a href="#portfolio">My Work</a></li>
+						<li><a href="#skills">My Skills</a></li>
+						<li><a href="#hire">Hire Me</a></li>
+					</ul>
+				</nav>
+				
+				<a
+					id="btnHamburger"
+					data-popup-trigger="one"
+					href="#"
+					class="toggle hide-for-desktop"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div data-popup-modal="one" class="popup-modal">
+					<a href="#portfolio" class="menuLinks">My Work</a>
+					<a href="#skills" class="menuLinks">My Skills</a>
+					<a href="#hire" class="menuLinks">Hire Me</a>
+				</div>
+			</header>
+			<div class="social-header">
+				<ul>
+					<li>
+						<a
+							href="https://github.com/khalisabrahman"
+							target="_blank"
+							rel="noreferrer noopener"
+							><i class="fab fa-github fa-lg"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="hero">
+			<div class="content">
+				<h1 class="stagger1">Beautifully Crafted Web Experiences</h1>
+				<div class="meet stagger1">
+					<span><i class="fas fa-hand-point-down"></i></span>
+					<p>Meet Khalis Rahman</p>
+				</div>
+				<svg class="scroll stagger1" width="45" height="87" viewBox="0 0 45 87">
+					<g id="Scroll" transform="translate(-169 -650)">
+						<g
+							id="Rectangle_3"
+							data-name="Rectangle 3"
+							transform="translate(169 650)"
+							fill="none"
+							stroke="#fff"
+							stroke-width="6"
+						>
+							<rect width="45" height="87" rx="22.5" stroke="none" />
+							<rect x="3" y="3" width="39" height="81" rx="19.5" fill="none" />
+						</g>
+						<ellipse
+							class="circle"
+							id="Ellipse_1"
+							data-name="Ellipse 1"
+							cx="13.5"
+							cy="14"
+							rx="13.5"
+							ry="14"
+							transform="translate(178 662)"
+							fill="#fff"
+						/>
+					</g>
+				</svg>
+			</div>
+			<svg class="hero-design" width="560" height="560" viewBox="0 0 560 560">
+				<g id="Group_1" data-name="Group 1" transform="translate(-965 -196)">
+					<rect
+						class="square-anim"
+						id="Rectangle_6"
+						data-name="Rectangle 6"
+						width="140"
+						height="140"
+						rx="28"
+						transform="translate(1245 196)"
+						fill="#6700ee"
+					/>
+					<rect
+						class="square-anim"
+						id="Rectangle_10"
+						data-name="Rectangle 10"
+						width="140"
+						height="140"
+						rx="28"
+						transform="translate(1245 476)"
+						fill="#6700ee"
+					/>
+					<rect
+						class="square-anim"
+						id="Rectangle_8"
+						data-name="Rectangle 8"
+						width="140"
+						height="140"
+						rx="28"
+						transform="translate(1385 336)"
+						fill="#6700ee"
+						opacity="0.287"
+					/>
+					<rect
+						class="square-anim"
+						id="Rectangle_7"
+						data-name="Rectangle 7"
+						width="140"
+						height="140"
+						rx="28"
+						transform="translate(1105 336)"
+						fill="#fff"
+					/>
+					<rect
+						class="square-anim"
+						id="Rectangle_11"
+						data-name="Rectangle 11"
+						width="140"
+						height="140"
+						rx="28"
+						transform="translate(1105 616)"
+						fill="#fff"
+					/>
+					<rect
+						class="square-anim"
+						id="Rectangle_9"
+						data-name="Rectangle 9"
+						width="140"
+						height="140"
+						rx="28"
+						transform="translate(965 476)"
+						fill="#fff"
+						opacity="0.241"
+					/>
+					<circle
+						class="square-anim"
+						id="Ellipse_3"
+						data-name="Ellipse 3"
+						cx="70"
+						cy="70"
+						r="70"
+						transform="translate(1105 476)"
+						fill="#00f7c7"
+					/>
+					<circle
+						class="square-anim"
+						id="Ellipse_5"
+						data-name="Ellipse 5"
+						cx="70"
+						cy="70"
+						r="70"
+						transform="translate(1245 336)"
+						fill="#f85fcd"
+					/>
+				</g>
+			</svg>
+		</div>
+
+		<section class="featured">
+			<div class="left">
+				<div class="inner transition2">
+					<p class="subtitle">Featured Project</p>
+					<a
+						href="https://easybank-landing-page-lyart-xi.vercel.app/"
+						class="featured-title"
+						target="_blank"
+						rel="noreferrer noopener"
+						>Easybank</a
+					>
+
+					<p class="featured-desc">Front end mentor challenge</p>
+					<a
+						href="https://github.com/khalisabrahman/Easybank-landing-page"
+						class="github-logo"
+						target="_blank"
+						rel="noreferrer noopener"
+						><i class="fab fa-github fa-lg"></i
+					></a>
+				</div>
+			</div>
+
+			<a
+				href="https://easybank-landing-page-lyart-xi.vercel.app/"
+				target="_blank"
+				rel="noreferrer noopener"
+				style="z-index: 300; border-radius: 5px"
+			>
+				<img
+					class="right transition2 box"
+					src="images/easybank.png"
+					alt="Featured Project"
+				/>
+			</a>
+		</section>
+
+		<div id="skills" class="skills glide">
+			<div class="skills-container glide__track" data-glide-el="track">
+				<ul class="glide__slides">
+					<li class="transition2 glide__slide">
+						<div class="icon-container one">
+							<i class="fab fa-js-square fa-5x"></i>
+						</div>
+						<p class="skill-title">Javascript</p>
+					</li>
+					<li class="transition2 glide__slide">
+						<div class="icon-container two">
+							<i class="fab fa-react fa-5x"></i>
+						</div>
+						<p class="skill-title">React</p>
+					</li>
+					<li class="transition2 glide__slide">
+						<div class="icon-container three">
+							<i class="fab fa-html5 fa-5x"></i>
+						</div>
+						<p class="skill-title">HTML5</p>
+					</li>
+					<li class="transition2 glide__slide">
+						<div class="icon-container one">
+							<i class="fab fa-css3-alt fa-5x"></i>
+						</div>
+						<p class="skill-title">CSS</p>
+					</li>
+					<li class="transition2 glide__slide">
+						<div class="icon-container one">
+							<i class="fab fa-sass fa-5x"></i>
+						</div>
+						<p class="skill-title">SASS</p>
+					</li>
+					<li class="transition2 glide__slide">
+						<div class="icon-container one">
+							<i class="fab fa-git-alt fa-5x"></i>
+						</div>
+						<p class="skill-title">GIT</p>
+					</li>
+					<li class="transition2 glide__slide">
+						<div class="icon-container one">
+							<i class="fab fa-git-alt fa-5x"></i>
+						</div>
+						<p class="skill-title">Material UI</p>
+					</li>
+				</ul>
+			</div>
+			<div class="glide__arrows" data-glide-el="controls">
+				<button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+					<
+				</button>
+				<button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+					>
+				</button>
+			</div>
+		</div>
+
+		<section id="portfolio" class="portfolio">
+			<div class="portfolio-container transition3">
+				<div class="portfolio-left">
+					<div class="inner">
+						<p class="subtitle">Project 1</p>
+						<a
+							href="https://social-media-dashboard-with-theme-switcher-sigma.vercel.app/"
+							class="featured-title"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Social Media Dashboard</a
+						>
+						<p class="featured-desc">
+							Dark/Light theme toggle, Mobile layout first, SCSS, BEM methodology
+						</p>
+						<a
+							href="https://github.com/khalisabrahman/social-media-dashboard-with-theme-switcher"
+							class="github-logo"
+							target="_blank"
+							rel="noreferrer noopener"
+							><i class="fab fa-github fa-lg"></i
+						></a>
+					</div>
+				</div>
+				<a
+					href="https://social-media-dashboard-with-theme-switcher-sigma.vercel.app/"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					<img
+						src="images/socialMedia.png"
+						alt="social media website"
+						class="portfolio-img"
+					/>
+				</a>
+			</div>
+			<div class="portfolio-container transition3">
+				<div class="portfolio-left">
+					<div class="inner">
+						<p class="subtitle">Project 2</p>
+						<a
+							href="https://maker-pre-launch-landing-page-kappa.vercel.app/"
+							class="featured-title"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Maker</a
+						>
+						<p class="featured-desc">Mobile layout first, SCSS, BEM methodology</p>
+						<a
+							href="https://github.com/khalisabrahman/Maker-pre-launch-landing-page"
+							class="github-logo"
+							target="_blank"
+							rel="noreferrer noopener"
+							><i class="fab fa-github fa-lg"></i
+						></a>
+					</div>
+				</div>
+				<a
+					href="https://maker-pre-launch-landing-page-kappa.vercel.app/"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					<img src="images/Maker.png" alt="maker website" class="portfolio-img" />
+				</a>
+			</div>
+			<div class="portfolio-container transition3">
+				<div class="portfolio-left">
+					<div class="inner">
+						<p class="subtitle">Project 3</p>
+						<a
+							href="https://sunnyside-agency-landing-page-six.vercel.app/"
+							class="featured-title"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Sunnyside</a
+						>
+						<p class="featured-desc">Mobile layout first, SCSS, BEM methodology</p>
+						<a
+							href="https://github.com/khalisabrahman/Sunnyside-agency-landing-page/tree/master/sunnyside-agency-landing-page-main"
+							class="github-logo"
+							target="_blank"
+							rel="noreferrer noopener"
+							><i class="fab fa-github fa-lg"></i
+						></a>
+					</div>
+				</div>
+				<a
+					href="https://sunnyside-agency-landing-page-six.vercel.app/"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					<img
+						src="images/sunnyside.png"
+						alt="sunnyside website"
+						class="portfolio-img"
+					/>
+				</a>
+			</div>
+			<div class="portfolio-container transition3">
+				<div class="portfolio-left">
+					<div class="inner">
+						<p class="subtitle">Project 4</p>
+						<a
+							href="https://movie-finder-tan.vercel.app/"
+							class="featured-title"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Youtube Clone</a
+						>
+						<p class="featured-desc">RapidAPI, React framework, Material UI</p>
+						<a
+							href="https://github.com/khalisabrahman/youtube_clone"
+							class="github-logo"
+							target="_blank"
+							rel="noreferrer noopener"
+							><i class="fab fa-github fa-lg"></i
+						></a>
+					</div>
+				</div>
+				<a
+					href="https://scintillating-hummingbird-38314a.netlify.app/"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					<img
+						src="images/YoutubeClone.png"
+						alt="Youtube Clone website"
+						class="portfolio-img"
+					/>
+				</a>
+			</div>
+		</section>
+		
+		<div id="hireModal" data-popup-modal="two" class="hirePopup-modal">
+			<form id='form'class="form">
+				<h2 class="modalTitle">Get In Touch.</h2>
+				<div class="form-control">
+					<input
+					type="email"
+					id="email"
+					placeholder="Your email address"
+					required
+					class="emailField"
+				/>
+				<textarea row='5' ype="text" id="message" placeholder="Type your message" class="messageField" required></textarea>
+				</div>
+				
+				<button class="sendBtn">Send</button>
+				<i id="modalCloseBtn" class="fas fa-times"></i>
+			</form>
+		</div>
+		<section>
+			<p class="contact-me">
+				Like what you see? <span><a id="hire"> Hire me </a></span>
+			</p>
+			<svg class="footer" width="1525" height="560" viewBox="0 0 1525 560">
+				<g id="Group_7" data-name="Group 7" transform="translate(0 -4417)">
+					<g
+						id="Rectangle_18"
+						data-name="Rectangle 18"
+						transform="translate(0 4417)"
+						fill="#6e08f4"
+						stroke="#707070"
+						stroke-width="1"
+					>
+						<rect width="1245" height="419" stroke="none" />
+						<rect x="0.5" y="0.5" width="1244" height="418" fill="none" />
+					</g>
+					<g id="Group_6" data-name="Group 6" transform="translate(-6 4221)">
+						<rect
+							id="Rectangle_6"
+							data-name="Rectangle 6"
+							width="140"
+							height="140"
+							rx="28"
+							transform="translate(1251 196)"
+							fill="#6700ee"
+						/>
+						<rect
+							id="Rectangle_10"
+							data-name="Rectangle 10"
+							width="140"
+							height="140"
+							rx="28"
+							transform="translate(1251 476)"
+							fill="#6700ee"
+						/>
+						<rect
+							id="Rectangle_8"
+							data-name="Rectangle 8"
+							width="140"
+							height="140"
+							rx="28"
+							transform="translate(1391 336)"
+							fill="#6700ee"
+							opacity="0.287"
+						/>
+						<rect
+							id="Rectangle_7"
+							data-name="Rectangle 7"
+							width="140"
+							height="140"
+							rx="28"
+							transform="translate(1111 336)"
+							fill="#fff"
+						/>
+						<rect
+							id="Rectangle_11"
+							data-name="Rectangle 11"
+							width="140"
+							height="140"
+							rx="28"
+							transform="translate(1105 616)"
+							fill="#fff"
+						/>
+						<rect
+							id="Rectangle_9"
+							data-name="Rectangle 9"
+							width="140"
+							height="140"
+							rx="28"
+							transform="translate(971 476)"
+							fill="#fff"
+							opacity="0.241"
+						/>
+						<circle
+							id="Ellipse_3"
+							data-name="Ellipse 3"
+							cx="70"
+							cy="70"
+							r="70"
+							transform="translate(1111 476)"
+							fill="#00f7c7"
+						/>
+						<circle
+							id="Ellipse_5"
+							data-name="Ellipse 5"
+							cx="70"
+							cy="70"
+							r="70"
+							transform="translate(1251 336)"
+							fill="#f85fcd"
+						/>
+					</g>
+				</g>
+			</svg>
+		</section>
+		<script src="./js/sendMail.js"></script>
+		<script src="./js/script.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+			integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
+			crossorigin="anonymous"
+		></script>
+		<script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+		<script>
+			gsap.registerPlugin(ScrollTrigger);
+			var t1 = gsap.timeline();
+
+			t1.from('.content', {
+				opacity: 0,
+				y: '-30%',
+				duration: 2,
+				ease: Power4.easeOut,
+			});
+
+			t1.from(
+				'.stagger1',
+				{
+					opacity: 0,
+					y: -50,
+					stagger: 0.3,
+					ease: Power4.easeOut,
+					duration: 2,
+				},
+				'-=1.5'
+			);
+
+			t1.from(
+				'.hero-design',
+				{
+					opacity: 0,
+					y: 50,
+					ease: Power4.easeOut,
+					duration: 1,
+				},
+				'-=2'
+			);
+
+			gsap.from('.square-anim', {
+				stagger: 0.3,
+				scale: 0.1,
+				duration: 1,
+				ease: Back.easeOut.config(1.7),
+			});
+
+			gsap.from('.transition2', {
+				scrollTrigger: {
+					trigger: '.transition2',
+					start: 'top bottom',
+				},
+				y: 50,
+				opacity: 0,
+				duration: 1.2,
+				stagger: 0.3,
+			});
+
+			gsap.from('.transition3', {
+				scrollTrigger: {
+					trigger: '.transition3',
+					start: 'top center',
+				},
+				y: 50,
+				opacity: 0,
+				duration: 1.2,
+				stagger: 0.6,
+			});
+		</script>
+
+		<script>
+			const config = {
+				type: 'slider',
+				perView: 4,
+				gap: 20,
+				bound: true,
+				rewind: true,
+				autoplay: 3000,
+				breakpoints: {
+					1024: {
+						perView: 4,
+					},
+					600: {
+						perView: 1,
+					},
+				},
+			};
+			new Glide('.glide', config).mount();
+		</script>
+	</body>
+</html>
